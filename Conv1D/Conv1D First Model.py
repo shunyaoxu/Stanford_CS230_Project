@@ -115,7 +115,7 @@ def printHistory(history):
        fig, axs = plt.subplots(figsize=(14,6))
        axs.plot(MSE_curve, color='royalblue', alpha = 1, linewidth=3.0, label="Train")
        axs.plot(MSE_val_curve, color='red', alpha = 1, linewidth=3.0, label="Validation")
-       axs.set_ylabel('Accuracy', fontsize=20)
+       axs.set_ylabel('Mean Squared Error', fontsize=20)
        axs.set_xlabel('Epoch', fontsize=20)
        axs.grid(color='g', ls = '-.', lw = 0.3)
        plt.xticks(fontsize = 16)
